@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:text="Note Title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoteTitle" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+
+            android:ems="10"
+            android:id="@+id/etNoteTitle" />
+
+        <TextView
+            android:text="Note Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etNoteText"
+            android:layout_weight="0.29" />
+
+        <Button
+            android:text="Add Note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
